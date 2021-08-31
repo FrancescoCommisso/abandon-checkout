@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-abandonedcheckouts-dev-113627-authRole",
+      "UnauthRoleArn": "arn:aws:iam::977152021916:role/amplify-abandonedcheckouts-dev-113627-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::977152021916:role/amplify-abandonedcheckouts-dev-113627-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-abandonedcheckouts-dev-113627-deployment",
+      "UnauthRoleName": "amplify-abandonedcheckouts-dev-113627-unauthRole",
+      "StackName": "amplify-abandonedcheckouts-dev-113627",
+      "StackId": "arn:aws:cloudformation:us-east-1:977152021916:stack/amplify-abandonedcheckouts-dev-113627/367bfbc0-0a71-11ec-ac5e-12f57c3150d7",
+      "AmplifyAppId": "dwwzlnze8871"
+    }
+  }
+}
