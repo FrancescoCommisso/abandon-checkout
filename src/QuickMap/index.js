@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { Button, Input, Wrapper } from "./style";
+import { Button, Input, Table, Wrapper } from "./style";
 const QuickMap = () => {
   const [ac, set_ac] = useState(null);
 
@@ -17,7 +17,7 @@ const QuickMap = () => {
         }}
       ></Input>{" "}
       {ac && ac.checkout && ac.checkout.line_items && (
-        <table>
+        <Table>
           <thead>
             <tr>
               <th>Description</th>
@@ -31,21 +31,15 @@ const QuickMap = () => {
             {ac.checkout.line_items.map((l) => {
               return (
                 <tr>
-                  <td style={{ border: "1px solid", padding: "10px" }}>
-                    {l.title}
-                  </td>
-                  <td style={{ border: "1px solid", padding: "10px" }}>
-                    {l.sku}
-                  </td>
+                  <td>{l.title}</td>
+                  <td>{l.sku}</td>
 
-                  <td style={{ border: "1px solid", padding: "10px" }}>
-                    {l.quantity}
-                  </td>
+                  <td>{l.quantity}</td>
                 </tr>
               );
             })}
           </tbody>
-        </table>
+        </Table>
       )}
     </Wrapper>
   );
